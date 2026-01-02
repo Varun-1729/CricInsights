@@ -14,3 +14,13 @@ CricInsight is a frontend web application that provides cricket-related insights
 - JavaScript (ES6)
 
 ## 📸 Screenshots
+
+### Home Page
+![Home Page](assets/screenshots/home.png)
+
+### Teams Page
+![Teams Page](assets/screenshots/teams.png)
+
+### Rankings Page
+![Rankings Page](assets/screenshots/rankings.png)
+
