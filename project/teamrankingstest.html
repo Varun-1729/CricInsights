@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Team Rankings</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Itim&family=Rubik+Wet+Paint&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            height: 100vh;
+        }
+    
+        #heading {
+            text-align: center;
+            color: #ffffff;
+            overflow: hidden; /* Prevents overflow during animation */
+            background: radial-gradient(circle, #001848 10%, #001848 50%, #fafafa 100%);
+            animation: bganimation 5s ease forwards;
+            padding:5px;
+            margin-bottom:5px;
+            border-radius:10px;
+         }
+        #brandtitle{
+            font-family: "Rubik Wet Paint", serif;
+            color: hsl(0, 0%, 58%);
+            animation: titleanimation 5s ease-in-out forwards;
+        }
+    
+        #heading #title-left, #heading #title-right {
+            display: inline-block;
+            font-family:  "Bebas Neue", sans-serif;
+            font-size: 5rem;
+            opacity: 0;
+        }
+    
+        /* Animation for the left word */
+        #title-left {
+            animation: slideInLeft 5s ease forwards;
+        }
+    
+        /* Animation for the right word */
+        #title-right {
+            animation: slideInRight 5s ease forwards;
+        }
+    
+        /* Keyframes for sliding in from the left */
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    
+        /* Keyframes for sliding in from the right */
+        @keyframes slideInRight {
+            0% {
+                transform: translateX(200px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes bganimation{
+            
+            0% {
+                background-size: 0% 0%;
+            }
+            100% {
+                background-size: 100% 100%;
+            }
+            
+        }
+        @keyframes titleanimation{
+            from {
+                font-size: 5em; /* Starting size */
+            }
+            to {
+                font-size: 1.2em; /* Final size */
+            }
+        }
+        #content{
+            font-family:"Space Grotesk", sans-serif;
+            margin:0 10px 10px 10px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        #content img{
+             width:20px;
+             height:20px;
+             margin-right:10px;
+        }
+    </style>        
+      
+</head>
+
+<body>
+    <div class="navcontainer">
+        <div id="heading">
+            <span id="brandtitle">CRICINSIGHTS</span>
+            <h1>
+            <span id="title-left">ICC Test</span>
+            <span id="title-right">Team Rankings</span>
+            </h1>
+        </div>
+        
+
+        <ul class="nav nav-tabs">
+           
+           
+        </ul>
+
+        <!-- Content Section -->
+        <div id="content">
+            <!-- Content will be loaded here -->
+            <table class="table table-light table-hover table-striped" >
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Team</th>
+                        <th>Matches</th>
+                        <th>Pts</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td><img src="Australia-Flag-21.jpg">Australia</td>
+                        <td>30</td>
+                        <td>3715</td>
+                        <td>124</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td><img src="india.jpeg">India</td>
+                        <td>29</td>
+                        <td>3498</td>
+                        <td>121</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td><img src="SA.png">South Africa</td>
+                        <td>24</td>
+                        <td>2524</td>
+                        <td>105</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td><img src="eng.jpg">England</td>
+                        <td>42</td>
+                        <td>4315</td>
+                        <td>103</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td><img src="sl.jpeg">Sri Lanka</td>
+                        <td>25</td>
+                        <td>2271</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td><img src="nz.jpeg">New Zealand</td>
+                        <td>25</td>
+                        <td>2220</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td>07</td>
+                        <td><img src="pak.jpg">Pakistan</td>
+                        <td>24</td>
+                        <td>2060</td>
+                        <td>86</td>
+                    </tr>
+                    <tr>
+                        <td>08</td>
+                        <td><img src="WI.jpg">West Indies</td>
+                        <td>26</td>
+                        <td>1992</td>
+                        <td>77</td>
+                    </tr>
+                    <tr>
+                        <td>09</td>
+                        <td><img src="ban.jpg">Bangladesh</td>
+                        <td>26</td>
+                        <td>1653</td>
+                        <td>64</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><img src="ire.png">Ireland</td>
+                        <td>5</td>
+                        <td>131</td>
+                        <td>26</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
